@@ -1,5 +1,5 @@
 <?php
+require_once('../app/config/global.config.php');
 require_once('../vendor/autoload.php');
 
-
-echo "IT WORKS";
+echo DATABASE_HOST;
