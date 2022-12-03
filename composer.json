@@ -1,0 +1,21 @@
+{
+    "name": "eduardobrehm/itworks",
+    "description": "Mini Framework PHP",
+    "type": "project",
+    "require": {
+        "twig/twig": "3.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eduardobrehm\\Itworks\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EduardoBrehm",
+            "email": "108371867+EduardoBrehm@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
