@@ -4,6 +4,6 @@
 
 
 //$this->get('/', 'HomeController@home');
-$this->get('/home', 'HomeController@home');
+//$this->get('/home', 'HomeController@home');
 
-$this->get('/', 'ContaController@extrato');
+$this->get('/', 'ContaController@index');
