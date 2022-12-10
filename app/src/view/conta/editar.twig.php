@@ -4,10 +4,12 @@
 
 {% block body %}
 
-<form action= "{{BASE}}conta-salvar" method="post">
+<h1>Editar Registro</h1>
+
+<form action= "{{BASE}}conta-atualizar" method="post">
 
     <div class="mt-3">
-        <label for="txtValor">Valor</label>
+        <label for="txtValor" class="form-label">Valor</label>
         <input
             type="text"
             id="txtValor"

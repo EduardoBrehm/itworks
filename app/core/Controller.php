@@ -19,4 +19,20 @@ class Controller{
 
         echo $twig->render($view . '.twig.php', $params);
     }
+
+    public function showMessage(
+        string $titulo,
+        string $descricao,
+        string $link = null,
+        int $httpCode = 200
+    ){
+        http_response_code($httpCode);
+
+        $this->load('partials/message',[
+            'titulo'        => $titulo,
+            'descricao'     => $descricao,
+            'link'          => $link
+
+        ]);
+    }
 }
