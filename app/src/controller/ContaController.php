@@ -1,9 +1,11 @@
 <?php
 namespace Itworks\src\controller;
 
+
+use Itworks\core\Controller;
 use Itworks\src\model\contaModel;
 
-class ContaController{
+class ContaController extends Controller{
 
     private $contaModel;
 
@@ -14,7 +16,7 @@ class ContaController{
     public function index(){
         $ListaExtrato = $this->contaModel->getAll();
 
-        require('../app/src/view/conta/main.php');
+        $this->load('conta/main', ['ListaExtrato' => $ListaExtrato] );
     }
 
     public function extrato(){
