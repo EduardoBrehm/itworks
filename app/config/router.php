@@ -1,14 +1,12 @@
 <?php
 
 #http://localhosto:8081/home
-$this->get('/', 'ContaController@index');
 
-$this->get('/', 'HomeController@home');
-//$this->get('/home', 'HomeController@home');
+$this->get('/', 'SiteController@index');
 
-//$this->get('/index', 'ContaController@index');
 
-$this->get('/novo', 'ContaController@novo');
-$this->post('/conta-salvar', 'ContaController@salvar');
-
-$this->get('/conta-editar', 'ContaController@novo');
+$this->get('/formulario', 'CurriculoController@criarCurriculo');
+$this->get('/cadastro-concluido', 'CurriculoController@sucesso');
+$this->get('/envio-arquivo', 'CurriculoController@upload');
+$this->post('/formulario-salvar', 'CurriculoController@SalvarCurriculo');
+$this->post('/arquivo-salvar', 'CurriculoController@SalvarUpload');
