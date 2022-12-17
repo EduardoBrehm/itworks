@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="{{BASE}}assets/css/stylesheets.css">
         <script src="{{BASE}}assets/js/bootstrap.min.js"></script>
         <title>
-            {% block title%} CONTA EXTRATO {% endblock %}
+            {% block title%}{% endblock %}
         </title>
     </head>
     <body>
 
         {% include 'partials/header.twig.php' %}
 
-        <main>
+        <main class="container">
 
         {% block body %}{% endblock %}
 

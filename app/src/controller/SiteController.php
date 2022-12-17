@@ -8,4 +8,11 @@ class SiteController extends Controller{
     public function index(){
         $this->load('site\index');
     }
+
+    public function sobre(){
+        $this->load('site\sobre');
+    }
+    public function funcionamento(){
+        $this->load('site\funcionamento');
+    }
 }
